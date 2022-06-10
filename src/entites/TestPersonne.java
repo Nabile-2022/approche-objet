@@ -8,5 +8,7 @@ public class TestPersonne
 	{
 		var p1 = new Personne("Rahmani", "Nabile", new AdressePostale(1, "rue blah", 30000, "Nîmes"));
 		var p2 = new Personne("Macron", "Emmanuel", new AdressePostale(2, "rue halb", 12345, "Paris"));
+		
+		p2.setAdresse(new AdressePostale(1, "a", 2, "b"));
 	}
 }
