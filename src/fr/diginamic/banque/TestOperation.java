@@ -21,7 +21,7 @@ public class TestOperation
 			
 			System.out.println("Date: %s\n".formatted(operation.getDate())
 					+ "Montant: %d €".formatted(montant));
-			System.out.println(operation);
+			System.out.println(operation.getType());
 			System.out.println();
 
 			if (operation instanceof Debit)

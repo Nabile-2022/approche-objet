@@ -15,6 +15,5 @@ public abstract class Operation
 	
 	public int getMontant() { return montant; }
 	
-	@Override
-	public abstract String toString();
+	public abstract String getType();
 }

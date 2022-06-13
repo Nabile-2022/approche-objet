@@ -8,7 +8,7 @@ public class Credit extends Operation
 	}
 
 	@Override
-	public String toString()
+	public String getType()
 	{
 		return this.getClass().getSimpleName().toUpperCase();
 	}
