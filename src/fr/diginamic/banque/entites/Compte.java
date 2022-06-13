@@ -2,11 +2,18 @@ package fr.diginamic.banque.entites;
 
 public class Compte
 {
-	private int numéro, solde;
+	private int numero, solde;
 	
-	public Compte(int numéro, int solde)
+	public Compte(int numero, int solde)
 	{
-		this.numéro = numéro;
+		this.numero = numero;
 		this.solde = solde;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return "Numéro: %d\n".formatted(numero)
+				+ "Solde: %d €".formatted(solde);
 	}
 }
