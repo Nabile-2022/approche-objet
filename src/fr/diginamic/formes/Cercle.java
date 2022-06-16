@@ -1,6 +1,6 @@
 package fr.diginamic.formes;
 
-public class Cercle extends Forme
+public class Cercle extends Forme implements ObjetGeometrique
 {
 	private double rayon;
 	
@@ -19,6 +19,18 @@ public class Cercle extends Forme
 	public double calculerPerimetre()
 	{
 		return 2 * Math.PI * rayon;
+	}
+
+	@Override
+	public double perimetre()
+	{
+		return calculerPerimetre();
+	}
+
+	@Override
+	public double surface()
+	{
+		return calculerSurface();
 	}
 
 }
