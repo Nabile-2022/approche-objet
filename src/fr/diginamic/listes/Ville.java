@@ -16,4 +16,17 @@ public class Ville implements Comparable<Ville>
 	{
 		return nombreHabitants - o.nombreHabitants;
 	}
+	
+	@Override
+	public boolean equals(Object obj)
+	{
+		if (obj instanceof Ville)
+		{
+			Ville other = (Ville) obj;
+			
+			return nom == other.nom && nombreHabitants == other.nombreHabitants;
+		}
+		else
+			return false;
+	}
 }
